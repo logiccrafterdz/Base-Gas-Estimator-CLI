@@ -1,0 +1,44 @@
+{
+  "name": "base-gas-estimator",
+  "version": "0.1.0",
+  "description": "A free, open-source CLI to estimate gas costs on Base in ETH and USD.",
+  "type": "module",
+  "bin": {
+    "base-gas": "./src/cli.js"
+  },
+  "main": "src/cli.js",
+  "scripts": {
+    "test": "node test/manual.test.js"
+  },
+  "keywords": [
+    "base",
+    "gas",
+    "ethereum",
+    "cli",
+    "web3",
+    "developer-tools"
+  ],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/logiccrafterdz/Base-Gas-Estimator-CLI.git"
+  },
+  "homepage": "https://github.com/logiccrafterdz/Base-Gas-Estimator-CLI#readme",
+  "bugs": {
+    "url": "https://github.com/logiccrafterdz/Base-Gas-Estimator-CLI/issues"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "dependencies": {
+    "ethers": "^6.8.1",
+    "commander": "^11.1.0",
+    "axios": "^1.6.2"
+  },
+  "files": [
+    "src/",
+    "README.md",
+    "LICENSE"
+  ]
+}

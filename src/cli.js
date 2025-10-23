@@ -94,6 +94,29 @@ program
   .option('--network <network>', 'Network to use (base, base-sepolia)', 'base')
   .action(handleTransfer);
 
+// Spotlight command
+program
+  .command('spotlight')
+  .description('Register your project in the Base Builders Spotlight directory')
+  .option('--register', 'Submit your project for inclusion')
+  .action(async (options) => {
+    if (options.register) {
+      console.log('📝 Preparing to register your project...');
+      console.log('🔗 GitHub Repo: `https://github.com/logiccrafterdz/Base-Gas-Estimator-CLI`');
+      console.log('🏷️  Category: Developer Tools');
+      console.log('💡 Description: Free CLI to estimate gas costs in ETH/USDC');
+      console.log('');
+      console.log('✅ To add your project:');
+      console.log('1. Fork: `https://github.com/logiccrafterdz/base-builders-spotlight`');
+      console.log('2. Edit projects.yml');
+      console.log('3. Submit a Pull Request');
+      console.log('');
+      console.log('🚀 Your project will be featured in the weekly Farcaster spotlight!');
+    } else {
+      console.log('Use --register to submit your project.');
+    }
+  });
+
 // Parse command line arguments
 program.parse();
 

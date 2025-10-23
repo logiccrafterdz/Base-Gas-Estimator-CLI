@@ -113,6 +113,14 @@ We welcome contributions! This project aims to be the most reliable and user-fri
 
 MIT License - feel free to use this tool in your projects, commercial or otherwise.
 
+## 🌟 Join the Base Builders Spotlight
+
+Your project can be featured in the community directory!
+
+```bash
+npx base-gas-estimator spotlight --register
+```
+
 ## 🔗 Links
 
 - **GitHub**: [Base-Gas-Estimator-CLI](https://github.com/logiccrafterdz/Base-Gas-Estimator-CLI)
